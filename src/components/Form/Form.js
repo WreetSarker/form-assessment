@@ -24,7 +24,10 @@ const Form = () => {
             newUserInfo.success = true;
             setUser(newUserInfo);
             console.log(user);
-            <User user={user}></User>
+            alert('Welcome!');
+            < User user={user} ></User >
+        } else {
+            alert('Passwords did not match')
         }
         e.preventDefault();
     }

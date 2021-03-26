@@ -1,0 +1,25 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.middle-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.account input{
+    height: 30px;
+    width: 300px;
+}
+.ic{
+    height: 30px;
+    width: 50px;
+}
+.birth input{
+    height: 30px;
+    width: 45px;
+}
+.second-line input, .third-line input{
+    height: 30px;
+    width: 300px;
+}

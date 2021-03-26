@@ -4,6 +4,7 @@ import { faUser, faEnvelope, faKey, faCreditCard } from '@fortawesome/free-solid
 import { faCcVisa, faCcPaypal } from '@fortawesome/free-brands-svg-icons'
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import './Login.css'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -29,11 +30,11 @@ const Login = () => {
             <div className="account">
                 <h4>Account</h4>
                 <form onSubmit={handleSubmit}>
-                    <FontAwesomeIcon icon={faUser} /><input type="text" onBlur={handleBlur} name="name" placeholder="Full Name" />
+                    <FontAwesomeIcon className="ic" icon={faUser} /><input type="text" onBlur={handleBlur} name="name" placeholder="Full Name" />
                     <br />
-                    <FontAwesomeIcon icon={faEnvelope} /><input type="text" onBlur={handleBlur} name="email" placeholder="Email Address" required />
+                    <FontAwesomeIcon className="ic" icon={faEnvelope} /><input type="text" onBlur={handleBlur} name="email" placeholder="Email Address" required />
                     <br />
-                    <FontAwesomeIcon icon={faKey} /><input type="password" onBlur={handleBlur} name="password" placeholder="Password" required />
+                    <FontAwesomeIcon className="ic" icon={faKey} /><input type="password" onBlur={handleBlur} name="password" placeholder="Password" required />
                     <br />
                 </form>
             </div>
@@ -72,8 +73,10 @@ const Login = () => {
                 </div>
             </div>
             <h4>Terms and Condition</h4>
-            <input type="checkbox" name="terms" id="" />
-            <label htmlFor="terms">I accept the terms and condition for signing up to this service, and hereby confirm I have read the Privacy Policy</label>
+            <div className="t-q">
+                <input type="checkbox" name="terms" id="" />
+                <label htmlFor="terms">I accept the terms and condition for signing up to this service, and hereby confirm I have read the Privacy Policy</label>
+            </div>
         </div>
     );
 };

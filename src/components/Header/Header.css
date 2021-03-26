@@ -1,5 +1,6 @@
 .header{
-    margin-left: 200px;
+    /* margin-left: 200px; */
+    text-align: center;
 }
 .header li{
     display: inline;
@@ -8,9 +9,12 @@
   }
   
   .header a{
+      width: 150px;
     text-decoration: none;
-    color: rgba(247, 247, 247, 0.877);
-    
+    background-image: linear-gradient(45deg, tomato, lightsalmon);
+    color: rgba(19, 18, 18, 0.877);
+    border: 2px solid black;
+    border-radius: 15px;
     font-weight: bold;
   }
   body{
